@@ -1,0 +1,121 @@
+body {
+    background-color: #f8f9fa; /* Light gray for light theme */
+    font-family: 'Press Start 2P', cursive;
+    color: #212529; /* Dark text for light theme */
+    min-height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container {
+    background-color: #ffffff; /* White container for light theme */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 1400px; /* Increased max-width */
+    margin: 0 auto;
+    flex: 1 0 auto; /* Allow container to grow but not shrink */
+}
+
+h1, h2, h3 {
+    font-family: 'Press Start 2P', cursive;
+    color: #2e7d32; /* Retro green */
+}
+
+.display-4 {
+    font-size: 3.5rem !important; /* Ensure larger size */
+    text-shadow: 2px 2px #1b5e20; /* Retro shadow effect */
+}
+
+.btn-primary {
+    background-color: #2e7d32; /* Retro green */
+    border-color: #2e7d32;
+}
+
+.btn-primary:hover {
+    background-color: #1b5e20; /* Darker retro green */
+    border-color: #1b5e20;
+}
+
+.btn-success {
+    background-color: #28a745; /* Green for login */
+}
+
+.btn-success:hover {
+    background-color: #218838;
+}
+
+.custom-table {
+    background-color: #1b5e20; /* Dark retro green */
+    color: #e9ecef; /* Light gray text for high contrast */
+    border: 1px solid #2e7d32; /* Green border */
+    width: 100% !important; /* Ensure full width */
+    table-layout: fixed; /* Fixed layout for better control */
+}
+
+.custom-table th,
+.custom-table td {
+    border: 1px solid #2e7d32; /* Green border for cells */
+    padding: 12px; /* Increased padding for wrapped text */
+    vertical-align: top; /* Align text to top for better wrapping */
+    overflow-wrap: break-word; /* Allow text to wrap */
+    word-break: break-word; /* Ensure breaking at any character if needed */
+}
+
+.custom-table thead {
+    background-color: #2e7d32; /* Retro green for header */
+    color: #ffffff; /* White text for header */
+}
+
+.custom-table tbody tr:hover {
+    background-color: #388e3c; /* Lighter green hover effect */
+}
+
+/* Dark theme support */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #212529; /* Dark background for dark theme */
+        color: #e9ecef; /* Light text for dark theme */
+    }
+
+    .container {
+        background-color: #1b5e20; /* Darker retro green container for dark theme */
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    }
+
+    h1, h2, h3 {
+        color: #66bb6a; /* Light retro green for headers in dark theme */
+    }
+
+    .custom-table {
+        background-color: #1b5e20; /* Dark retro green for dark theme */
+        color: #ffffff; /* White text for max contrast */
+    }
+
+    .custom-table thead {
+        background-color: #2e7d32; /* Consistent green header */
+    }
+
+    .custom-table tbody tr:hover {
+        background-color: #388e3c; /* Consistent hover effect */
+    }
+}
+
+/* Ensure table responsiveness */
+.table-responsive {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+    .display-4 {
+        font-size: 2rem !important;
+    }
+    .custom-table th,
+    .custom-table td {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+}
