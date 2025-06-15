@@ -47,4 +47,4 @@ Projenin kullanım akışını gösteren bir ekran görüntüsü serisi:
 5. Bir çekme isteği (pull request) gönderin.
 
 ## Lisans
-Bu proje MIT Lisansı ile lisanslanmıştır - detaylar için [LICENSE.md](LICENSE.md) dosyasını inceleyin.
+Bu proje MIT Lisansı ile lisanslanmıştır - detaylar için [LICENSE](LICENSE) dosyasını inceleyin.
